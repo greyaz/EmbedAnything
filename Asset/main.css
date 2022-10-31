@@ -1,0 +1,7 @@
+#embed-anything{
+    padding: 0;
+}
+#embed-anything > iframe{
+    width: 100%;
+    height: 100%;
+}
