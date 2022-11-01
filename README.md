@@ -1,5 +1,6 @@
 # EmbedAnything
 Embedding anything into Kanboard. This plugin allows you to add custom pages as boards in different projects.   
+
 The following parameters will also pass to your custom page as a URL query string:   
 `project_id`, `project_title`, `search_query`   
 
