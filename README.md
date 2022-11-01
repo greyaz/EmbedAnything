@@ -11,7 +11,7 @@ Check the file `config-default.php` for more information.
 2. Copy and rename the file `config-default.php` to `config.php`, then edit it by following the instructions in the comments.
 
 > ⚠️   
->IF the embedded page is refused by your browser, please check your CSP setting on the server fisrt. References:   
+>If the embedded page is refused by your browser, please check your CSP setting on the server fisrt. References:   
 > https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src   
 > https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors
 
