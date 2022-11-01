@@ -1,12 +1,18 @@
 #main #embed-anything{
-    padding: 0;
+    padding: 0 !important;
 }
 #main #embed-anything > iframe{
     width: 100%;
     height: 100%;
 }
+/**************************************************************************************************/
+/*                                                                                                */
 /* For the user of the plugin ThemeRevision who has switched to the Google Material icon package: */
 /* Please uncomment the following codes and edit the icon Unicode.                                */
+/* You can find the Unicode here:                                                                 */
+/* https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Sharp                      */
+/*                                                                                                */
+/**************************************************************************************************/
 /*
 #main .project-header .views-switcher-component .views i.embed-anything-icon:before{
     content: "\f201" !important;
