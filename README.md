@@ -13,7 +13,7 @@ Check the file `config-default.php` for more information.
 > ⚠️   
 >IF the embedded page is refused by your browser, please check your CSP setting on the server fisrt. References:   
 > https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src   
-> https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors
+> https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors
 
 
 
