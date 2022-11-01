@@ -12,9 +12,10 @@ class Plugin extends Base
         {
             global $embedAnythingConfigs;
             require_once('plugins/EmbedAnything/config.php');
+
+            $this->template->hook->attach('template:project-header:view-switcher', 'EmbedAnything:project_header/views');
+            $this->hook->on('template:layout:css', array('template' => 'plugins/EmbedAnything/Asset/main.css'));
         }
-        $this->template->hook->attach('template:project-header:view-switcher', 'EmbedAnything:project_header/views');
-        $this->hook->on('template:layout:css', array('template' => 'plugins/EmbedAnything/Asset/main.css'));
     }
 
     public function getPluginName()
