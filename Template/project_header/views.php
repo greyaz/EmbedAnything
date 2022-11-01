@@ -13,7 +13,8 @@
                 'project_name'  => $project['name'], 
                 'plugin'        => 'EmbedAnything'
             ), 
-            false
+            false,
+            "embed-anything-icon"
         ) ?>
     </li>
 <?php endif ?>
