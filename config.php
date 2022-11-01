@@ -9,6 +9,12 @@ $embedAnythingConfigs = array(
         "label" => "Metabase",
         // The URL of the embedding page
         "embed" => "/metabase/public/dashboard/6c525c8e-b202-466f-bdc8-605e8072d072",
+        // Optional: The aliases of the query parameters will pass to your custom page. If unset, the original name will be kept.
+        "alias" => array(){
+            "project_id" => "",
+            "project_title" => "project",
+            "search_query" => "",
+        }
     ),
     // Optional: Setting a project id as the key will override the default settings in a specified project.
     "13" => array(

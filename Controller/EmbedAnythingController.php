@@ -11,7 +11,10 @@ class EmbedAnythingController extends BaseController
         $project = $this->getProject();
 
         $this->response->html($this->helper->layout->app('EmbedAnything:project_dashboard/show', array(
-            'project' => $project
+            'project' => $project,
+            'title' => $project["name"],
+            'description' => $this->helper->projectHeader->getDescription($project),
+            'searchQuery' => urlencode($this->helper->projectHeader->getSearchQuery($project)),
         )));
     }
 }

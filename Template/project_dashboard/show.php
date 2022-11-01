@@ -1,12 +1,12 @@
 <?php
     $config = !empty($GLOBALS["embedAnythingConfigs"][$project["id"]]) ? $GLOBALS["embedAnythingConfigs"][$project["id"]] : $GLOBALS["embedAnythingConfigs"]["0"];
-    $queryStr = "?project_id=".$project['id']."&project_title=".$project['name'];
-    parse_str($_SERVER['QUERY_STRING'], $queries);
-    if (!empty($queries["search"])){
-        $queryStr .= "&search=".$queries["search"];
-    }
+
+    $paramProjectId = !empty($config["alias"]["project_id"]) ? $config["alias"]["project_id"] : "project_id";
+    $paramProjectTitle = !empty($config["alias"]["project_title"]) ? $config["alias"]["project_title"] : "project_title";
+    $paramSearchQuery = !empty($config["alias"]["search_query"]) ? $config["alias"]["search_query"] : "search_query";
+    $queryStr = "?".$paramProjectId."=".$project['id']."&".$paramProjectTitle."=".$project['name']."&".$paramSearchQuery."=".$searchQuery;
 ?>
-<section class="page">
+<section id="main">
     <?= $this->projectHeader->render($project, 'EmbedAnythingController', 'show', false, 'EmbedAnything') ?>
     <div class="sidebar-container">
         <div id="embed-anything" class="sidebar-content">
