@@ -4,7 +4,11 @@ Embedding anything into [Kanboard](https://github.com/kanboard/kanboard). This p
 ## Data forwarding
 Part of the project's information can be delivered to your page by specifying the following predefined keywords in the config file: 
 
-`::PROJECT_ID`, `::PROJECT_NAME`, `::PROJECT_OWNER_ID`, `::PROJECT_OWNER_USERNAME`, `::PROJECT_SEARCH_QUERY` 
+- `::PROJECT_ID`
+- `::PROJECT_NAME`
+- `::PROJECT_OWNER_ID`
+- `::PROJECT_OWNER_USERNAME`
+- `::PROJECT_SEARCH_QUERY` 
 
 Static contents can also be forwarded. Check the file `config-default.php` for more information.
 
