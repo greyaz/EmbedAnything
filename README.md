@@ -3,6 +3,7 @@ Embedding anything into [Kanboard](https://github.com/kanboard/kanboard). This p
 
 > ⚠️ Please re-edit you config file after upgrading to v0.2.0. The configs have been changed.
 
+# Features
 Data forwarding is supported. Part of the project information can be delivered to your page by specifying the following predefined keywords in the config file: 
 
 `::PROJECT_ID`, `::PROJECT_NAME`, `::PROJECT_OWNER_ID`, `::PROJECT_OWNER_USERNAME`, `::PROJECT_SEARCH_QUERY` 
