@@ -8,7 +8,8 @@ Part of the project's information can be delivered to your page by specifying th
 
 Static contents can also be forwarded. Check the file `config-default.php` for more information.
 
-> ⚠️ Please re-edit you config file after upgrading from `0.1.0` to `0.2.0`. The configs have been changed.
+> ⚠️   
+> Please re-edit you config file after upgrading from `0.1.0` to `0.2.0`. The configs have been changed.
 
 ## Getting started
 1. Install from the Kanboard plugin manager directly. Or clone this repository to your plugin folder.
