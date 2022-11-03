@@ -1,5 +1,7 @@
 # EmbedAnything
-Embedding anything into [Kanboard](https://github.com/kanboard/kanboard). This plugin allows you to embed a custom page via an iframe as a stand-alone page in different projects.
+Embedding anything into [Kanboard](https://github.com/kanboard/kanboard). This plugin allows you to embed a custom page via an iframe as a stand-alone board in different projects.
+
+> ⚠️ Please re-edit you config file after upgrading to v0.2.0. The configs have been changed.
 
 Data forwarding is supported. Part of the project information can be delivered to your page by specifying the following predefined keywords in the config file: 
 
