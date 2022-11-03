@@ -1,5 +1,6 @@
 #main #embed-anything{
     padding: 0 !important;
+    min-height: 500px;
 }
 #main #embed-anything > iframe{
     width: 100%;
