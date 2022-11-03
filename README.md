@@ -8,7 +8,7 @@ Data forwarding is supported. Part of the project information can be delivered t
 
 Customized static data is also supported. Check the file `config-default.php` for more information.
 
-> ⚠️ Please re-edit you config file after upgrading to v0.2.0. The configs have been changed.
+> ⚠️ Please re-edit you config file after upgrading `0.1.0` to `0.2.0`. The configs have been changed.
 
 ## Getting started
 1. Install from the Kanboard plugin manager directly. Or clone this repository to your plugin folder.
