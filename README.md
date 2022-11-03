@@ -1,5 +1,5 @@
 # EmbedAnything
-Embedding anything into [Kanboard](https://github.com/kanboard/kanboard). This plugin allows you to embed any web content via an iframe as a stand-alone page in different projects.
+Embed anything into [Kanboard](https://github.com/kanboard/kanboard). This plugin allows you to embed any web content via an iframe as a stand-alone page in different projects.
 
 ## Data forwarding
 Part of the project's information can be delivered to your page by specifying the following predefined keywords in the config file: 
