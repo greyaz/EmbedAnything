@@ -1,6 +1,11 @@
 # EmbedAnything
 Embed anything into [Kanboard](https://github.com/kanboard/kanboard). This plugin utilizes HTML iframes and allows you to embed any web content into your project as a stand-alone page.
 
+## Use Case
+Embed a BI tool to enhance the ability of data analytics in Kanboard.
+
+![alt screenshot](Screenshot/1.png)
+
 ## Data forwarding
 Part of the project's information can be delivered to your page by specifying the following predefined keywords in the config file: 
 
