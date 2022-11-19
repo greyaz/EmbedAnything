@@ -3,6 +3,7 @@ Embed anything into [Kanboard](https://github.com/kanboard/kanboard). This plugi
 
 ## Use Case
 Embed a BI tool to enhance the ability of data analytics in Kanboard.
+> _Note: This is just a use case. The BI tool is not a part of EmbedAnything._
 
 ![alt screenshot](Screenshot/1.png)
 
