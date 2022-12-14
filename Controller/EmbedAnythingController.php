@@ -15,17 +15,18 @@ class EmbedAnythingController extends BaseController
         $url = $config["url"];
         $queryString = "";
 
-        foreach($config["queries"] as $key => $value)
-        {
-            $queryString .= $key."=";
-            $queryString .= (substr($value, 0, 2 ) === "::" ? $this->getParamValue($project, $value) : $value);
-            $queryString .= "&";
+        if (isset($config["queries"])){
+            foreach($config["queries"] as $key => $value)
+            {
+                $queryString .= $key."=";
+                $queryString .= (substr($value, 0, 2 ) === "::" ? $this->getParamValue($project, $value) : $value);
+                $queryString .= "&";
+            }
         }
         if (!empty($queryString)){
             $queryString = substr("?".$queryString, 0, -1);
             $url .= $queryString;
         }
-
 
         $this->response->html($this->helper->layout->app('EmbedAnything:project_dashboard/show', array(
             'project' => $project,

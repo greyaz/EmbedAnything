@@ -13,6 +13,17 @@ class Plugin extends Base
             global $embedAnythingConfigs;
             require_once('plugins/EmbedAnything/config.php');
 
+            $source = "";
+            foreach($embedAnythingConfigs as $key => $settings){
+                if(!empty($settings["url"])){
+                    $source .= $settings["url"]." ";
+                }
+            }
+            $source = trim($source);
+            if (strlen($source) > 0){
+                $this->setContentSecurityPolicy(array('frame-src' => $source));
+            }
+
             $this->template->hook->attach('template:project-header:view-switcher', 'EmbedAnything:project_header/views');
             $this->hook->on('template:layout:css', array('template' => 'plugins/EmbedAnything/Asset/main.css'));
             $this->hook->on('template:layout:js', array('template' => 'plugins/EmbedAnything/Asset/main.js'));
@@ -36,7 +47,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.2.0';
+        return '0.3.0';
     }
 
     public function getPluginHomepage()
